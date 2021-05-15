@@ -1,4 +1,4 @@
-function generate(){
+generate = () => {
   var quotes = {
     "- Walt Disney": '"The Way Get Started Is To Quit Talking And Begin Doing."',
     "- Winston Churchill": '"The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty."',
