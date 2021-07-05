@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Random Quote Generator</title>
+  <title>Quote Generator</title>
 </head>
 <body>
 
   <div class="container">
-    <div class="quotes">
-      <p id="quote"></p>
-      <h3 id="author"></h3>
+    <div class="quotes-container">
+      <div class="inner-quotes-container">
+        <p id="quote"></p>
+        <h3 id="author"></h3>
+      </div>
+        <div class="quote-btn">
+          <button class="btn btn-info" id="generate">Generate Quote</button>
+      </div>
     </div>
   </div>
-  <div style="text-align: center;">
-    <button class="btn btn-info" onclick="generate()">Generate Quote</button>
-  </div>
-  <br>
   
   <script src ="script.js"></script>
 </body>
