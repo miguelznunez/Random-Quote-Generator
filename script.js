@@ -46,7 +46,7 @@ generate = () => {
   // grab the value(quote) that belongs to that key
   var quote = quotes[author]
 
-  document.getElementById("quote").innerHTML = quote;
-  document.getElementById("author").innerHTML = author;
+  document.querySelector("#quote").textContent = quote;
+  document.querySelector("#author").textContent = author;
 
 }
