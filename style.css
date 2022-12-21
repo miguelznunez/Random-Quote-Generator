@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-body{
+body {
   background: #06BDC1;
   background: -webkit-radial-gradient(center, #06BDC1, #68469F);
   background: -moz-radial-gradient(center, #06BDC1, #68469F);
   background: radial-gradient(ellipse at center, #06BDC1, #68469F);
 }
 
-.container{
+.app {
   width: 1280px;
   margin: auto;
 }
 
-.quotes-container{
+.quotes-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@ body{
   height: 100vh;
 }
 
-.inner-quotes-container{
+.inner-quotes-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,31 +33,42 @@ body{
   border-radius: 10px;
   background-color: #F4EDEA;
   border: 10px solid #06BDC1;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9); 
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9);
 }
 
-.inner-quotes-container p{
+.inner-quotes-container p {
   font-size: 1.5rem;
   color: black;
 }
 
-.inner-quotes-container h3{
+.inner-quotes-container h3 {
   font-size: 2rem;
   color: black;
   font-family: 'Dancing Script', cursive;
 }
 
-.quote-btn{padding-top: 25px;}
-
-@media(max-width:1280px){
-  .container{width: 95%;}
+.quote-btn {
+  padding-top: 25px;
 }
 
-@media(max-width:900px){
-  .inner-quotes-container{width: 100%;}
+@media(max-width:1280px) {
+  .container {
+    width: 95%;
+  }
 }
 
-@media(max-width:480px){
-  .inner-quotes-container p{font-size: 1.2rem;}
-  .inner-quotes-container h3{font-size: 1.5rem;}
+@media(max-width:900px) {
+  .inner-quotes-container {
+    width: 100%;
+  }
+}
+
+@media(max-width:480px) {
+  .inner-quotes-container p {
+    font-size: 1.2rem;
+  }
+
+  .inner-quotes-container h3 {
+    font-size: 1.5rem;
+  }
 }
