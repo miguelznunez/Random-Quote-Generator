@@ -1,9 +1,4 @@
-document.querySelector("#generate").addEventListener("click", () => {
-  generate();
-});
-
-generate = () => {
-  var quotes = {
+const quotes = {
     "- Walt Disney": '"The Way Get Started Is To Quit Talking And Begin Doing."',
     "- Winston Churchill": '"The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty."',
     "- Will Rogers": '"Don’t Let Yesterday Take Up Too Much Of Today."',
@@ -39,14 +34,23 @@ generate = () => {
     "- Booker T. Washington": '"Few things can help an individual more than to place responsibility on him, and to let him know that you trust him."'
   };
 
+
+document.querySelector("#generate").addEventListener("click", () => {
+  generate();
+});
+
+function generate(){
   // grab all the keys in the dictionary (authors) and store in an array
-  var authors = Object.keys(quotes);
+  const authors = Object.keys(quotes);
   // grab a random key (author) and store it in author
-  var author = authors[Math.floor(Math.random() * authors.length)];
+  const author = authors[Math.floor(Math.random() * authors.length)];
   // grab the value(quote) that belongs to that key
-  var quote = quotes[author]
+  const quote = quotes[author]
 
   document.querySelector("#quote").textContent = quote;
   document.querySelector("#author").textContent = author;
+}
 
+window.onload = function(){
+  generate()
 }
